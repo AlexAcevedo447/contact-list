@@ -1,8 +1,9 @@
-const { Contact } = require("../class-oriented/entities");
+const { Contact } = require("./entities");
 
 const contactList = [new Contact(
     0,
     "Andrés",
+    "Carrera",
     2347363328,
     "United States",
     "Ohio",
@@ -11,6 +12,7 @@ const contactList = [new Contact(
 new Contact(
     1,
     "Caroline",
+    "Wormwood",
     78637245728139,
     "Germany",
     "Berlin",
@@ -33,6 +35,7 @@ const showOne = function (id) {
 const update = function (id, contact = new Contact()) {
     const cont = showOne(id);
     cont.name = contact.name;
+    cont.name = contact.last_name;
     cont.phone = contact.phone;
     cont.city = contact.city;
     cont.country = contact.country;

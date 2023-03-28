@@ -6,6 +6,7 @@ class Contacts {
         this.contactList = [new Contact(
             0,
             "Andrés",
+            "Carrera",
             2347363328,
             "United States",
             "Ohio",
@@ -14,6 +15,7 @@ class Contacts {
         new Contact(
             1,
             "Caroline",
+            "Wormwood",
             78637245728139,
             "Germany",
             "Berlin",
@@ -37,6 +39,7 @@ class Contacts {
     update(id, contact = new Contact()) {
         const cont = this.showOne(id);
         cont.name = contact.name;
+        cont.last_name = contact.last_name;
         cont.phone = contact.phone;
         cont.city = contact.city;
         cont.country = contact.country;
