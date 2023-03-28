@@ -8,6 +8,7 @@ console.log("------------Crear contacto------------");
 console.log(contacts.create(new Contact(
     2,
     "Lucas",
+    "Forero",
     987983457,
     "Colombia",
     "Medellín",
@@ -23,6 +24,7 @@ console.log(contacts.update(
     new Contact(
         undefined,
         "Anderson",
+        "Puentes",
         987983457,
         "Colombia",
         "Medellín",
